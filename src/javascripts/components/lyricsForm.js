@@ -3,11 +3,11 @@ const lyricsForm = () => {
   <form>
     <div class="form-group">
       <label for="artist" id="label" >Artist:</label>
-      <input type="text" class="form-control" id="artist" aria-describedby="artist" placeholder="Queen">
+      <input type="text" class="form-control" id="artist" aria-describedby="artist" placeholder="Fleetwood Mac">
     </div>
     <div class="form-group">
       <label for="song-title" id="label">Song title:</label>
-      <input type="text" class="form-control" id="song-title" placeholder="Under Pressure">
+      <input type="text" class="form-control" id="song-title" placeholder="Gypsy">
     </div>
     <div class="col text-center">
       <button type="submit" class="btn btn-secondary" id="submit-song-btn">SEARCH FOR LYRICS</button>

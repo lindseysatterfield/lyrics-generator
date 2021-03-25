@@ -4,7 +4,6 @@
 body {
   background-color: antiquewhite;
   margin-top: 40px;
-  // text-align: center;
 }
 
 #form-container {
@@ -17,4 +16,9 @@ form {
   background-color: lightcoral;
   padding: 1em 3em;
   border-radius: 10px;
+}
+
+#lyrics-container {
+  margin: 1em 3em;
+  white-space: pre-line;
 }
