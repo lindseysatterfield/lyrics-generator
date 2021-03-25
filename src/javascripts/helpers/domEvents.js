@@ -1,12 +1,18 @@
+import showLyrics from '../components/showLyrics';
+import getLyrics from './lyrics';
+
 const domEvents = () => {
   document.querySelector('body').addEventListener('click', (e) => {
     if (e.target.id.includes('submit-song-btn')) {
       e.preventDefault();
+      const artist = document.querySelector('#artist').value;
+      const title = document.querySelector('#song-title').value;
       const songObject = {
-        artist: document.querySelector('#artist').value,
-        song: document.querySelector('#song-title').value
+        artist,
+        title
       };
-      console.warn(songObject);
+      getLyrics(songObject).then((lyrics) => showLyrics(songObject, lyrics));
+      document.querySelector('form').reset();
     }
   });
 };
