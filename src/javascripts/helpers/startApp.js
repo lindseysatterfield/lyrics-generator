@@ -1,5 +1,5 @@
 import lyricsForm from '../components/lyricsForm';
-import domBuilder from './domBuilder';
+import domBuilder from '../components/domBuilder';
 
 const startApp = () => {
   domBuilder();
