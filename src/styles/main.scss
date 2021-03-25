@@ -1,9 +1,11 @@
 @import "~bootstrap/scss/bootstrap";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
 
 body {
-  background-color: antiquewhite;
-  margin-top: 40px;
+  background-color: #EBEBEB;
+  margin: 3em 1em;
+  font-family: 'Red Hat Display', sans-serif;
 }
 
 #form-container {
@@ -15,10 +17,19 @@ form {
   width: 35em;
   background-color: lightcoral;
   padding: 1em 3em;
+  margin: 0 1em;
   border-radius: 10px;
 }
 
 #lyrics-container {
   margin: 1em 3em;
+}
+
+img {
+  width: 1em;
+}
+
+#song {
   white-space: pre-line;
+  font-size: 20px;
 }
