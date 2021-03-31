@@ -1,7 +1,7 @@
 const showLyrics = (songObject, lyrics) => {
   document.querySelector('#lyrics-container').innerHTML = `
-  <h1>${songObject.title.toUpperCase()}</h1>
-  <h3 class="mb-4">BY ${songObject.artist.toUpperCase()}</h3>`;
+  <h2>${songObject.title.toUpperCase()}</h2>
+  <h4 class="mb-4">BY ${songObject.artist.toUpperCase()}</h4>`;
   document.querySelector('#lyrics-container').innerHTML += `<div id="song">${lyrics.lyrics}</div>`;
 };
 
